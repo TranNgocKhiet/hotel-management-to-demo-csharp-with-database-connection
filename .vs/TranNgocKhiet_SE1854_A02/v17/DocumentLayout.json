@@ -1,0 +1,526 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\roominformationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\userprofileeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\userprofileeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\userprofileeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\userprofileeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingdetaildialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingdetaildialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\customerlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\customerlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingdetaildialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingdetaildialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\customerlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\customerlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\businessobjects\\bookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\bookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\dataaccesslayer\\bookingdetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\bookingdetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\bookingreservationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\roominformationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\customerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\customerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\businessobjects\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\dataaccesslayer\\bookingreservationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\bookingreservationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFB03B2-C56C-4B82-8098-659788F350D7}|Services\\Services.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\services\\iroominformationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFB03B2-C56C-4B82-8098-659788F350D7}|Services\\Services.csproj|solutionrelative:services\\iroominformationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFB03B2-C56C-4B82-8098-659788F350D7}|Services\\Services.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\services\\roominformationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFB03B2-C56C-4B82-8098-659788F350D7}|Services\\Services.csproj|solutionrelative:services\\roominformationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5147F1-CAF5-48D3-A1D7-BE16FC851DE3}|Repositories\\Repositories.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\repositories\\iroominformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5147F1-CAF5-48D3-A1D7-BE16FC851DE3}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iroominformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5147F1-CAF5-48D3-A1D7-BE16FC851DE3}|Repositories\\Repositories.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\repositories\\roominformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5147F1-CAF5-48D3-A1D7-BE16FC851DE3}|Repositories\\Repositories.csproj|solutionrelative:repositories\\roominformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\tranngockhietwpf\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\businessobjects\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60F8D0D-944C-482C-A4CF-95430F1A9044}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\tranngockhiet_se1854_a02\\dataaccesslayer\\myhotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\myhotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingReservationReportPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationReportPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationReportPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationReportPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationReportPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T17:31:28.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserProfileEditPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserProfileEditPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\UserProfileEditPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserProfileEditPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\UserProfileEditPage.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:42:11.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProfileEditPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:46:27.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomInformationListPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwGwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:30:52.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingReservationReportPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:30:10.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\AdminWindow.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:51:16.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\AdminWindow.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\AdminWindow.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T16:44:58.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingReservationHistoryPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAWwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T17:41:41.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomInformationListPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T13:32:26.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T09:35:43.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingDetailDialog.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingDetailDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingDetailDialog.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingDetailDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingDetailDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:13:02.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingReservationHistoryPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:36:57.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerListPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\CustomerListPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\CustomerListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:43:46.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingReservationListPage.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationListPage.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T15:46:43.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingReservationListPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAWwJ0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:52:23.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookingReservationDialog.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationDialog.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T15:47:13.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingDetailDAO.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\BookingDetailDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BookingDetailDAO.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\BookingDetailDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\BookingDetailDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:55:26.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingDetail.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\BookingDetail.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\BookingDetail.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\BookingDetail.cs",
+              "RelativeToolTip": "BusinessObjects\\BookingDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:55:28.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingDetailDialog.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingDetailDialog.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingDetailDialog.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingDetailDialog.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingDetailDialog.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwBwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T17:13:45.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CustomerListPage.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerListPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\CustomerListPage.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerListPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\CustomerListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:28:32.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingReservationDialog.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationDialog.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationDialog.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\BookingReservationDialog.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationDialog.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:30:52.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BookingReservationDAO.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\BookingReservationDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BookingReservationDAO.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\BookingReservationDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\BookingReservationDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:48:27.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BookingReservation.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\BookingReservation.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\BookingReservation.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\BookingReservation.cs",
+              "RelativeToolTip": "BusinessObjects\\BookingReservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:48:30.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerDialog.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\CustomerDialog.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\CustomerDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\CustomerDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T15:54:21.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RoomInformationDialog.xaml",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T15:54:34.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IRoomInformationService.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Services\\IRoomInformationService.cs",
+              "RelativeDocumentMoniker": "Services\\IRoomInformationService.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Services\\IRoomInformationService.cs",
+              "RelativeToolTip": "Services\\IRoomInformationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:45:04.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoomInformationService.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Services\\RoomInformationService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomInformationService.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Services\\RoomInformationService.cs",
+              "RelativeToolTip": "Services\\RoomInformationService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:44:44.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IRoomInformationRepository.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Repositories\\IRoomInformationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRoomInformationRepository.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Repositories\\IRoomInformationRepository.cs",
+              "RelativeToolTip": "Repositories\\IRoomInformationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:44:24.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RoomInformationRepository.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Repositories\\RoomInformationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomInformationRepository.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\Repositories\\RoomInformationRepository.cs",
+              "RelativeToolTip": "Repositories\\RoomInformationRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:43:11.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserWindow.xaml.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\UserWindow.xaml.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\TranNgocKhietWPF\\UserWindow.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\UserWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:42:10.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RoomInformation.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\RoomInformation.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\RoomInformation.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\BusinessObjects\\RoomInformation.cs",
+              "RelativeToolTip": "BusinessObjects\\RoomInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:42:07.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MyHotelContext.cs",
+              "DocumentMoniker": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\MyHotelContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\MyHotelContext.cs",
+              "ToolTip": "D:\\1_fpt\\5_su25\\4_prn212\\2_project\\assignment-2\\TranNgocKhiet_SE1854_A02\\DataAccessLayer\\MyHotelContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\MyHotelContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:28:21.27Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
