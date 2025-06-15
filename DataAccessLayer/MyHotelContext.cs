@@ -42,7 +42,11 @@ namespace DataAccessLayer
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<RoomInformation>()
-           .HasKey(r => r.RoomID);
+            .HasKey(r => r.RoomID);
+
+            modelBuilder.Entity<BookingDetail>()
+            .HasKey(b => new { b.BookingReservationID, b.RoomID, b.StartDate, b.EndDate, b.ActualPrice });
+
         }
     }
 }

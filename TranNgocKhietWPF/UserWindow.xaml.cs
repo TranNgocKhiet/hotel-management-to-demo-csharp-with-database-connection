@@ -27,6 +27,12 @@ namespace TranNgocKhietWPF
             frMain.NavigationService.Navigate(new UserProfileEditPage(currentCustomer));
         }
 
+        private void ViewRoomListButtonClick(object sender, RoutedEventArgs e)
+        {
+            frMain.NavigationService.Navigate(new RoomInformationForUserListPage(currentCustomer));
+        }
+        
+
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();

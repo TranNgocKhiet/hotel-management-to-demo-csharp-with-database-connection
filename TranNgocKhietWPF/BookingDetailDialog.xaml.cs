@@ -27,8 +27,8 @@ namespace TranNgocKhietWPF
             BookingDetail = detail;
             txtBookingReservationID.Text = detail.BookingReservationID.ToString();
             txtRoomID.Text = detail.RoomID.ToString();
-            txtStartDate.Text = detail.StartDate?.ToString("yyyy-MM-dd") ?? "";
-            txtEndDate.Text = detail.EndDate?.ToString("yyyy-MM-dd") ?? "";
+            txtStartDate.Text = detail.StartDate.ToString("yyyy-MM-dd") ?? "";
+            txtEndDate.Text = detail.EndDate.ToString("yyyy-MM-dd") ?? "";
             txtActualPrice.Text = detail.ActualPrice?.ToString() ?? "";
         }
 

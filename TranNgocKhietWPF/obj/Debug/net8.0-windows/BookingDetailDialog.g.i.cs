@@ -92,7 +92,7 @@ namespace TranNgocKhietWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TranNgocKhietWPF;V1.0.0.0;component/bookingdetaildialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TranNgocKhietWPF;component/bookingdetaildialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BookingDetailDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

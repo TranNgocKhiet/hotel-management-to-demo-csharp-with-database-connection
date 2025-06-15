@@ -76,6 +76,7 @@ namespace TranNgocKhietWPF
                         .ToList();
 
                     BookingDetailDataGrid.ItemsSource = null;
+                    BookingDetailDataGrid.Items.Clear();
                     BookingDetailDataGrid.ItemsSource = details;
                 }
                 catch (Exception ex)

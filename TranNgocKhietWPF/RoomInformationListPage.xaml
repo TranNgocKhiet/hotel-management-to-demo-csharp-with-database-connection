@@ -103,7 +103,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn Header="Price/Date" Binding="{Binding RoomPricePerDate}"/>
+                <DataGridTextColumn Header="Price/Date" Binding="{Binding RoomPricePerDay}"/>
                 <DataGridTextColumn Header="Type ID" Binding="{Binding RoomTypeID}" />
             </DataGrid.Columns>
         </DataGrid>

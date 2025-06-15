@@ -7,11 +7,14 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="UserWindow" 
-        Width="850"
+        Width="950"
         Height="900">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="50"/>
@@ -53,35 +56,46 @@
         <Frame x:Name="frMain" 
                VerticalAlignment="Stretch" 
                Grid.Row="0"
-               Grid.RowSpan="15"
+               Grid.RowSpan="13"
                Grid.Column="0"
-               Grid.ColumnSpan="16"
+               Grid.ColumnSpan="18"
                NavigationUIVisibility="Hidden"/>
+
+        <Button Content="Room List"
+                Height="30"
+                Width="150"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Grid.Row="14"
+                HorizontalAlignment="Left"
+                Click="ViewRoomListButtonClick"/>
 
         <Button Content="Booking Reservation History" 
                 Name="ToBookingReservationHistoryPageButton" 
                 Click="ToBookingReservationHistoryPageButton_Click" 
                 HorizontalAlignment="Left"
                 Height="30" 
-                Width="160"
-                Grid.Column="1"
-                Grid.Row="15"
+                Width="150"
+                Grid.Column="8"
+                Grid.Row="14"
                 Grid.ColumnSpan="4"/>
+
 
         <Button Content="Edit Profile"
                 Name="ToEditProfiletPageButton" 
                 Click="ToEditProfiletPageButton_Click" 
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Right"
                 Height="30" 
-                Width="160"
-                Grid.Column="6"
-                Grid.Row="15"
+                Width="150"
+                Grid.Column="13"
+                Grid.Row="14"
                 Grid.ColumnSpan="4"/>
-
+        
         <Button Content="Log Out"
+                HorizontalAlignment="Right"
                 Height="30" 
-                Width="160"
-                Grid.Column="11"
+                Width="150"
+                Grid.Column="13"
                 Grid.Row="15"
                 Grid.ColumnSpan="4"
                 Click="LogoutButton_Click"/>

@@ -3,7 +3,6 @@ using Repositories;
 using Services;
 using System.Text.Json;
 using System.Windows;
-using System.Text.Json;
 using System.IO;
 
 namespace TranNgocKhietWPF
@@ -11,6 +10,18 @@ namespace TranNgocKhietWPF
     public partial class LoginWindow : Window
     {
         private readonly ICustomerService iCustomerService;
+
+        public class AppSettings
+        {
+            public EmailCredentials EmailCredentials { get; set; }
+            public Dictionary<string, string> ConnectionStrings { get; set; }
+        }
+
+        public class EmailCredentials
+        {
+            public string EmailAddress { get; set; }
+            public string Password { get; set; }
+        }
 
         public LoginWindow()
         {
@@ -22,19 +33,24 @@ namespace TranNgocKhietWPF
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = File.ReadAllText("appsetting.json");
-            Customer admin = JsonSerializer.Deserialize<Customer>(jsonString);
+            string jsonString = File.ReadAllText("appsettings.json");
+            AppSettings settings = JsonSerializer.Deserialize<AppSettings>(jsonString);
 
-            Customer customer = iCustomerService.Login(txtEmail.Text, txtPass.Password);
-            if (admin != null
-                && admin.EmailAddress.Equals(txtEmail.Text)
-                && admin.Password.Equals(txtPass.Password))
+            string inputEmail = txtEmail.Text;
+            string inputPassword = txtPass.Password;
+
+            if (settings?.EmailCredentials != null &&
+                settings.EmailCredentials.EmailAddress == inputEmail &&
+                settings.EmailCredentials.Password == inputPassword)
             {
                 this.Hide();
                 AdminWindow adminWindow = new AdminWindow();
                 adminWindow.Show();
+                return;
             }
-            else if (customer != null)
+
+            Customer customer = iCustomerService.Login(inputEmail, inputPassword);
+            if (customer != null)
             {
                 this.Hide();
                 UserWindow userWindow = new UserWindow(customer);
@@ -42,7 +58,7 @@ namespace TranNgocKhietWPF
             }
             else
             {
-                MessageBox.Show("You are not permission!");
+                MessageBox.Show("You are not permission !");
             }
         }
 

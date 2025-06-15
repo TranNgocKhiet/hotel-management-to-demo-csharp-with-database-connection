@@ -36,36 +36,76 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="600"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="300"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
-
         </Grid.RowDefinitions>
 
-        <Label x:Name="label"
-               Content="Booking Reservation History" 
-               Grid.Row="0" 
-               Grid.Column="5"
+        <Label Content="Booking Detail History" 
+               Grid.Row="3" 
+               Grid.Column="1"
                FontSize="20"
                Grid.ColumnSpan="8"
-               HorizontalAlignment="Center"/>
-        
-        <DataGrid x:Name="BookingReservationDataGrid" 
+               HorizontalAlignment="Left"/>
+
+        <DataGrid x:Name="BookingReservationDataGrid"
                   AutoGenerateColumns="False"
-                  CanUserAddRows="False"
-                  Grid.Column="1" 
+                  Grid.Column="1"
                   Grid.Row="1"
                   Grid.ColumnSpan="16"
-                  Grid.RowSpan="1">
+                  Grid.RowSpan="1"
+                  SelectionChanged="BookingDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" />
-                <DataGridTextColumn Header="Date" Binding="{Binding BookingDate, StringFormat='dd/MM/yyyy'}" />
-                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" />
-                <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerID}"/>
-                <DataGridTextColumn Header="Booking Status" Binding="{Binding BookingStatus}" />
+                <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate, StringFormat='dd/MM/yyyy'}" />
+                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat='{}{0:C}'}" />
+                <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerID}" />
+
+                <DataGridTemplateColumn Header="Status">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="StatusText"/>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding BookingStatus}" Value="1">
+                                    <Setter TargetName="StatusText" Property="Text" Value="Confirmed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding BookingStatus}" Value="2">
+                                    <Setter TargetName="StatusText" Property="Text" Value="Canceled" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding BookingStatus}" Value="3">
+                                    <Setter TargetName="StatusText" Property="Text" Value="Completed" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Content="Booking Detail History" 
+               Grid.Row="2" 
+               Grid.Column="1"
+               FontSize="20"
+               Grid.ColumnSpan="8"
+               HorizontalAlignment="Left"/>
+
+        <DataGrid x:Name="BookingDetailDataGrid"
+                  AutoGenerateColumns="False"
+                  Grid.Row="3"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="16"
+                  Margin="0,5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" />
+                <DataGridTextColumn Header="Room ID" Binding="{Binding RoomID}" />
+                <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" />
+                <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" />
+                <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice, StringFormat='{}{0:C}'}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

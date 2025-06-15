@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="clr-namespace:TranNgocKhietWPF"
       mc:Ignorable="d"
-      Width="850"
+      Width="950"
       Height="900"
       Title="User Profile Edit Page">
     <Grid Margin="20">
@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="350"/>
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>

@@ -10,14 +10,14 @@ namespace TranNgocKhietWPF
     {
         public BookingReservation BookingReservation { get; private set; }
 
-        private readonly ICustomerService _customerService;
+        private readonly ICustomerService iCustomerService;
 
         public BookingReservationDialog()
         {
             InitializeComponent();
 
             var customerRepo = new CustomerRepository();
-            _customerService = new CustomerService(customerRepo);
+            iCustomerService = new CustomerService(customerRepo);
 
             LoadCustomers();
         }
@@ -37,7 +37,7 @@ namespace TranNgocKhietWPF
 
         private void LoadCustomers()
         {
-            var customers = _customerService.GetCustomers();
+            var customers = iCustomerService.GetCustomers();
             cboCustomer.ItemsSource = customers;
         }
 

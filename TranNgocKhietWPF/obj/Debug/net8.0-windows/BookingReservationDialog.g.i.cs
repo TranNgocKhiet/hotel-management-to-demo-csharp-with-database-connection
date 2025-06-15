@@ -84,7 +84,7 @@ namespace TranNgocKhietWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TranNgocKhietWPF;V1.0.0.0;component/bookingreservationdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TranNgocKhietWPF;component/bookingreservationdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BookingReservationDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

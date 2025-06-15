@@ -14,5 +14,11 @@
     <Compile Update="BookingReservationReportPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="RoomInformationForUserListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookingDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
