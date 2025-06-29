@@ -250,12 +250,10 @@ D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\bin\Debug\net8.0-windows\Services.pdb
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\bin\Debug\net8.0-windows\DataAccessLayer.pdb
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\TranNgocKhietWPF.csproj.AssemblyReference.cache
-D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingDetailDialog.baml
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingReservationDialog.baml
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingReservationReportPage.baml
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\RoomInformationDialog.baml
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\AdminWindow.g.cs
-D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingDetailDialog.g.cs
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingReservationDialog.g.cs
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingReservationHistoryPage.g.cs
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\obj\Debug\net8.0-windows\BookingReservationListPage.g.cs

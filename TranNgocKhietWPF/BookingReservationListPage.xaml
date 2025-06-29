@@ -6,175 +6,140 @@
       xmlns:local="clr-namespace:TranNgocKhietWPF"
       mc:Ignorable="d"
       Title="Booking Reservation List Page"
-      Width="950"
-      Height="900"
-      Loaded="Page_Loaded">
+      Loaded="Page_Loaded"
+      Background="#F2F4F7">
 
-    <Grid Margin="20">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-        </Grid.ColumnDefinitions>
+    <Page.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="#2C3E50"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#FAFAFA"/>
+            <Setter Property="BorderBrush" Value="#CCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Background" Value="#8C5DF6"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#f5f5f5"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+        </Style>
+    </Page.Resources>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="200" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="200" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-        </Grid.RowDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="0,40">
+            <Border Margin="60"
+                    Padding="30"
+                    Background="White"
+                    CornerRadius="15">
+                <StackPanel>
+                    <Label Content="Booking Reservation Management"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Foreground="#8C5DF6"
+                           Margin="0,0,0,20"/>
 
-        <Label Content="Booking Reservation Management"
-               Grid.Row="0"
-               Grid.Column="5"
-               FontSize="20"
-               Grid.ColumnSpan="8"
-               HorizontalAlignment="Center" />
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left"
+                                Margin="0,0,0,20">
+                        <TextBox x:Name="SearchTextBox"
+                                 Width="300"
+                                 Height="35"
+                                 Margin="0,0,10,0"/>
+                        <Button Content="Search"
+                                Width="100"
+                                Height="35"
+                                Click="SearchButton_Click"/>
+                    </StackPanel>
 
-        <TextBox x:Name="SearchTextBox"
-                 Grid.Row="1"
-                 Grid.Column="1"
-                 Grid.ColumnSpan="14"
-                 VerticalAlignment="Center"
-                 Margin="0,10,10,10"
-                 Height="30" />
+                    <DataGrid x:Name="BookingDataGrid"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              RowHeight="35"
+                              ColumnWidth="*"
+                              Margin="0,0,0,20"
+                              SelectionChanged="BookingDataGrid_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate, Mode=OneWay, StringFormat='dd/MM/yyyy'}" Width="120"/>
+                            <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, Mode=OneWay, StringFormat='{}{0:C}'}" Width="150"/>
+                            <DataGridTextColumn Header="Customer Name" Binding="{Binding CustomerFullName, Mode=OneWay}" Width="200"/>
+                            <DataGridTemplateColumn Header="Status" Width="120">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock x:Name="StatusText" FontWeight="SemiBold"/>
+                                        <DataTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding BookingStatus, Mode=OneWay}" Value="0">
+                                                <Setter TargetName="StatusText" Property="Text" Value="Pending"/>
+                                                <Setter TargetName="StatusText" Property="Foreground" Value="Orange"/>
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding BookingStatus, Mode=OneWay}" Value="1">
+                                                <Setter TargetName="StatusText" Property="Text" Value="Confirmed"/>
+                                                <Setter TargetName="StatusText" Property="Foreground" Value="Green"/>
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding BookingStatus, Mode=OneWay}" Value="2">
+                                                <Setter TargetName="StatusText" Property="Text" Value="Canceled"/>
+                                                <Setter TargetName="StatusText" Property="Foreground" Value="Red"/>
+                                            </DataTrigger>
+                                        </DataTemplate.Triggers>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
 
-        <Button Content="Search"
-                Grid.Row="1"
-                Grid.Column="15"
-                Grid.ColumnSpan="2"
-                Width="100"
-                Height="30"
-                VerticalAlignment="Center"
-                Click="SearchButton_Click" />
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left"
+                                Margin="0,0,0,30">
+                        <Button Content="Edit Selected"
+                                Width="130"
+                                Height="35"
+                                Click="EditButton_Click"/>
+                        <Button Content="Delete Selected"
+                                Width="130"
+                                Height="35"
+                                Background="#E53935"
+                                Click="DeleteButton_Click"/>
+                    </StackPanel>
 
-        <DataGrid x:Name="BookingDataGrid"
-                  AutoGenerateColumns="False"
-                  Grid.Column="1"
-                  Grid.Row="2"
-                  Grid.ColumnSpan="16"
-                  Grid.RowSpan="1"
-                  SelectionChanged="BookingDataGrid_SelectionChanged">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" />
-                <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate, StringFormat='dd/MM/yyyy'}" />
-                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat='{}{0:C}'}" />
-                <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerID}" />
+                    <Label Content="Booking Details"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="#8C5DF6"
+                           Margin="0,0,0,15"/>
 
-                <DataGridTemplateColumn Header="Status">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock x:Name="StatusText"/>
-                            <DataTemplate.Triggers>
-                                <DataTrigger Binding="{Binding BookingStatus}" Value="1">
-                                    <Setter TargetName="StatusText" Property="Text" Value="Confirmed" />
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding BookingStatus}" Value="2">
-                                    <Setter TargetName="StatusText" Property="Text" Value="Canceled" />
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding BookingStatus}" Value="3">
-                                    <Setter TargetName="StatusText" Property="Text" Value="Completed" />
-                                </DataTrigger>
-                            </DataTemplate.Triggers>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-
-        <Button Content="Create New"
-                Width="100"
-                Height="30"
-                Grid.Row="3"
-                Grid.Column="2"
-                Grid.ColumnSpan="3"
-                Click="CreateButton_Click" />
-
-        <Button Content="Edit Selected"
-                Width="100"
-                Height="30"
-                Grid.Row="3"
-                Grid.Column="8"
-                Grid.ColumnSpan="3"
-                Click="EditButton_Click" />
-
-        <Button Content="Delete Selected"
-                Width="100"
-                Height="30"
-                Grid.Row="3"
-                Grid.Column="12"
-                Grid.ColumnSpan="3"
-                Click="DeleteButton_Click" />
-
-        <Label Content="Booking Details"
-               Grid.Row="4"
-               Grid.Column="1"
-               Grid.ColumnSpan="16"
-               FontWeight="Bold"
-               VerticalAlignment="Center"
-               Margin="0,10"/>
-
-        <DataGrid x:Name="BookingDetailDataGrid"
-                  AutoGenerateColumns="False"
-                  Grid.Row="5"
-                  Grid.Column="1"
-                  Grid.ColumnSpan="16"
-                  Height="200"
-                  Margin="0,5">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" />
-                <DataGridTextColumn Header="Room ID" Binding="{Binding RoomID}" />
-                <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" />
-                <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" />
-                <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice, StringFormat='{}{0:C}'}" />
-            </DataGrid.Columns>
-        </DataGrid>
-
-        <Button Content="Create New Detail"
-                Width="140"
-                Height="30"
-                Grid.Row="6"
-                Grid.Column="2"
-                Grid.ColumnSpan="4"
-                Click="CreateDetailButton_Click" />
-
-        <Button Content="Edit Selected Detail"
-                Width="140"
-                Height="30"
-                Grid.Row="6"
-                Grid.Column="8"
-                Grid.ColumnSpan="4"
-                Click="EditDetailButton_Click" />
-
-        <Button Content="Delete Selected Detail"
-                Width="140"
-                Height="30"
-                Grid.Row="6"
-                Grid.Column="12"
-                Grid.ColumnSpan="4"
-                Click="DeleteDetailButton_Click" />
-    </Grid>
+                    <DataGrid x:Name="BookingDetailDataGrid"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              RowHeight="35"
+                              ColumnWidth="*">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber, Mode=OneWay}" Width="120"/>
+                            <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate, Mode=OneWay, StringFormat='dd/MM/yyyy'}" Width="150"/>
+                            <DataGridTextColumn Header="End Date" Binding="{Binding EndDate, Mode=OneWay, StringFormat='dd/MM/yyyy'}" Width="150"/>
+                            <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice, Mode=OneWay, StringFormat='{}{0:C}'}" Width="150"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
 </Page>

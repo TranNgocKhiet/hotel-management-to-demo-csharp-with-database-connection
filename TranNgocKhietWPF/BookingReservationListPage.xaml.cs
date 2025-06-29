@@ -1,10 +1,11 @@
-﻿using Repositories;
+﻿using BusinessObjects;
+using Repositories;
 using Services;
+using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using BusinessObjects;
-using System.Linq;
-using System;
+using System.Windows.Controls.Primitives;
 
 namespace TranNgocKhietWPF
 {
@@ -12,17 +13,47 @@ namespace TranNgocKhietWPF
     {
         private readonly IBookingReservationService iBookingReservationService;
         private readonly IBookingDetailService iBookingDetailService;
+        private readonly ICustomerService iCustomerService;
+        private readonly IRoomInformationService iRoomInformationService;
 
+        public class BookingDetailWithRoom
+        {
+            public BookingDetail BookingDetail { get; set; }
+            public RoomInformation Room { get; set; }
+
+            public int BookingReservationID => BookingDetail.BookingReservationID;
+            public int RoomID => BookingDetail.RoomID;
+            public string? RoomNumber => Room.RoomNumber;
+            public DateOnly? StartDate => BookingDetail.StartDate;
+            public DateOnly? EndDate => BookingDetail.EndDate;
+            public decimal? ActualPrice => BookingDetail.ActualPrice;
+        }
+        public class BookingWithCustomer
+        {
+            public BookingReservation BookingReservation { get; set; }
+            public Customer Customer { get; set; }
+
+            public int BookingReservationID => BookingReservation.BookingReservationID;
+            public DateOnly? BookingDate => BookingReservation.BookingDate;
+            public decimal? TotalPrice => BookingReservation.TotalPrice;
+            public string? CustomerFullName => Customer.CustomerFullName;
+            public Byte? BookingStatus => BookingReservation.BookingStatus;
+        }
         public BookingReservationListPage()
         {
             InitializeComponent();
 
-            var repo = new BookingReservationRepository();
-            var service = new BookingReservationService(repo);
-            iBookingReservationService = service;
+            BookingReservationRepository reservationRepo = new BookingReservationRepository();
+            iBookingReservationService = new BookingReservationService(reservationRepo);
 
-            var detailRepo = new BookingDetailRepository();
+            BookingDetailRepository detailRepo = new BookingDetailRepository();
             iBookingDetailService = new BookingDetailService(detailRepo);
+
+            CustomerRepository customerRepo = new CustomerRepository();
+            iCustomerService = new CustomerService(customerRepo);
+
+            RoomInformationRepository roomRepo = new RoomInformationRepository();
+            iRoomInformationService = new RoomInformationService(roomRepo);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -32,22 +63,41 @@ namespace TranNgocKhietWPF
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            string keyword = SearchTextBox.Text.ToLower().Trim();
+            string keyword = SearchTextBox.Text.Trim().ToLower();
 
             try
             {
-                var allBookings = iBookingReservationService.GetBookingReservations();
-                var filtered = allBookings
-                    .Where(b => b.BookingReservationID.ToString().Contains(keyword) ||
-                                b.CustomerID.ToString().Contains(keyword))
-                    .ToList();
+                var customers = iCustomerService.GetCustomers();
+                var reservations = iBookingReservationService.GetBookingReservations();
 
-                BookingDataGrid.ItemsSource = null;
-                BookingDataGrid.ItemsSource = filtered;
+                var query = reservations
+                    .Join(customers,
+                          r => r.CustomerID,
+                          c => c.CustomerID,
+                          (r, c) => new BookingWithCustomer
+                          {
+                              BookingReservation = r,
+                              Customer = c
+                          });
+
+                if (!string.IsNullOrEmpty(keyword))
+                {
+                    query = query.Where(dto =>
+                           dto.BookingReservationID.ToString().Contains(keyword)
+                        || dto.Customer.CustomerID.ToString().Contains(keyword)
+                        || (dto.CustomerFullName?.ToLower().Contains(keyword) ?? false)
+                        || (dto.BookingDate?.ToString("dd/MM/yyyy").Contains(keyword) ?? false)
+                        || (dto.TotalPrice?.ToString().ToLower().Contains(keyword) ?? false));
+                }
+
+                BookingDataGrid.ItemsSource = query.ToList();   
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Search failed.\n" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Search failed.\n" + ex.Message,
+                                "Error",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
             }
         }
 
@@ -55,9 +105,21 @@ namespace TranNgocKhietWPF
         {
             try
             {
-                var bookings = iBookingReservationService.GetBookingReservations();
+                var customers = iCustomerService.GetCustomers();
+                var reservations = iBookingReservationService.GetBookingReservations();
+                var filtered = reservations
+                    .Join(customers, 
+                    r => r.CustomerID,
+                    c => c.CustomerID,
+                    (r, c) => new BookingWithCustomer()
+                    {
+                        BookingReservation = r,
+                        Customer = c
+                    })
+                    .ToList();
+
                 BookingDataGrid.ItemsSource = null;
-                BookingDataGrid.ItemsSource = bookings;
+                BookingDataGrid.ItemsSource = filtered;
             }
             catch (Exception ex)
             {
@@ -67,41 +129,47 @@ namespace TranNgocKhietWPF
 
         private void BookingDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (BookingDataGrid.SelectedItem is BookingReservation selectedBooking)
+            if (BookingDataGrid.SelectedItem is not BookingWithCustomer selectedBooking)
             {
-                try
-                {
-                    var details = iBookingDetailService.GetBookingDetails()
-                        .Where(d => d.BookingReservationID == selectedBooking.BookingReservationID)
-                        .ToList();
+                BookingDetailDataGrid.ItemsSource = null;
+                return;
+            }
 
-                    BookingDetailDataGrid.ItemsSource = null;
-                    BookingDetailDataGrid.Items.Clear();
-                    BookingDetailDataGrid.ItemsSource = details;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Failed to load booking details.\n" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
+            try
+            {
+                int id = selectedBooking.BookingReservation.BookingReservationID;
+
+                var allDetails = iBookingDetailService.GetBookingDetails()
+                                                        .Where(d => d.BookingReservationID == id)
+                                                        .ToList();
+
+                var allRooms = iRoomInformationService.GetRoomInformations(); 
+
+                var detailWithRoomList = allDetails
+                    .Join(allRooms,
+                            d => d.RoomID,
+                            r => r.RoomID,
+                            (d, r) => new BookingDetailWithRoom
+                            {
+                                BookingDetail = d,
+                                Room = r
+                            })
+                    .ToList();
+
+                BookingDetailDataGrid.ItemsSource = detailWithRoomList;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to load booking details.\n" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
-        private void CreateButton_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new BookingReservationDialog();
-            if (dialog.ShowDialog() == true)
-            {
-                BookingReservation newBooking = dialog.BookingReservation;
-                iBookingReservationService.AddBookingReservation(newBooking);
-                LoadBookingList();
-            }
-        }
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            if (BookingDataGrid.SelectedItem is BookingReservation selectedBooking)
+            if (BookingDataGrid.SelectedItem is BookingWithCustomer selectedBooking)
             {
-                var dialog = new BookingReservationDialog(selectedBooking);
+                var dialog = new BookingReservationDialog(selectedBooking.BookingReservation);
                 if (dialog.ShowDialog() == true)
                 {
                     iBookingReservationService.UpdateBookingReservation(dialog.BookingReservation);
@@ -116,7 +184,7 @@ namespace TranNgocKhietWPF
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedBooking = BookingDataGrid.SelectedItem as BookingReservation;
+            var selectedBooking = BookingDataGrid.SelectedItem as BookingWithCustomer;
 
             if (selectedBooking == null)
             {
@@ -131,87 +199,29 @@ namespace TranNgocKhietWPF
                 MessageBoxImage.Question
             );
 
+            int id = selectedBooking.BookingReservationID;
+
             if (result == MessageBoxResult.Yes)
             {
                 try
                 {
-                    iBookingReservationService.RemoveBookingReservation(selectedBooking);
-                    MessageBox.Show("Booking deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    List<BookingDetail> bookingDetails = iBookingDetailService.GetBookingDetails()
+                        .Where(d => d.BookingReservationID == selectedBooking.BookingReservationID)
+                        .ToList();
+                    foreach (var d in iBookingDetailService.GetBookingDetails()
+                                               .Where(d => d.BookingReservationID == id)
+                                               .ToList())
+                    {
+                        iBookingDetailService.RemoveBookingDetail(d);
+                    }
 
+                    iBookingReservationService.RemoveBookingReservation(selectedBooking.BookingReservation);
+                    MessageBox.Show("Deleted.");
                     LoadBookingList();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Failed to delete booking.\n" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-        }
-
-        private void CreateDetailButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (BookingDataGrid.SelectedItem is BookingReservation selectedBooking)
-            {
-                var dialog = new BookingDetailDialog(selectedBooking.BookingReservationID);
-                if (dialog.ShowDialog() == true)
-                {
-                    var newDetail = dialog.BookingDetail;
-                    iBookingDetailService.AddBookingDetail(newDetail);
-                    BookingDataGrid_SelectionChanged(null, null);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please select a booking to add detail to.");
-            }
-        }
-
-
-        private void EditDetailButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (BookingDetailDataGrid.SelectedItem is BookingDetail selectedDetail)
-            {
-                var dialog = new BookingDetailDialog(selectedDetail);
-                if (dialog.ShowDialog() == true)
-                {
-                    iBookingDetailService.UpdateBookingDetail(dialog.BookingDetail);
-                    BookingDataGrid_SelectionChanged(null, null);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please select a booking detail to update.");
-            }
-        }
-
-        private void DeleteDetailButton_Click(object sender, RoutedEventArgs e)
-        {
-            var selectedDetail = BookingDetailDataGrid.SelectedItem as BookingDetail;
-
-            if (selectedDetail == null)
-            {
-                MessageBox.Show("Please select a booking detail to delete.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            MessageBoxResult result = MessageBox.Show(
-                $"Are you sure you want to delete detail for Room ID: {selectedDetail.RoomID}?",
-                "Confirm Delete",
-                MessageBoxButton.YesNo,
-                MessageBoxImage.Question
-            );
-
-            if (result == MessageBoxResult.Yes)
-            {
-                try
-                {
-                    iBookingDetailService.RemoveBookingDetail(selectedDetail);
-                    MessageBox.Show("Detail deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    BookingDataGrid_SelectionChanged(null, null);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Failed to delete detail.\n" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }

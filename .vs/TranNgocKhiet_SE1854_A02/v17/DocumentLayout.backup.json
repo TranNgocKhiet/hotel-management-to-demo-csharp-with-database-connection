@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\dataaccesslayer\\myhotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\myhotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\dataaccesslayer\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationforuserlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationforuserlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\customerlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\customerlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\customerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\customerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\dataaccesslayer\\roominformationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{914242BD-A5D2-4E66-91BA-0E0E6147BCF1}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\roominformationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\bookingreservationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationforuserlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationforuserlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\roominformationlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|d:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\tranngockhietwpf\\userprofileeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9981C402-A715-D12B-255D-D9759CE144BF}|TranNgocKhietWPF\\TranNgocKhietWPF.csproj|solutionrelative:tranngockhietwpf\\userprofileeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,123 +75,183 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TranNgocKhietWPF\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "TranNgocKhietWPF\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAwAUAAAAAAAAAAAAAAA==",
+              "Title": "BookingDialog.xaml.cs",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingDialog.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingDialog.xaml.cs",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingDialog.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingDialog.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T08:56:21.185Z",
+              "WhenOpened": "2025-06-29T11:14:09.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerDAO.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\CustomerDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\CustomerDAO.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\CustomerDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\CustomerDAO.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAACAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T08:51:25.728Z",
+              "DocumentIndex": 7,
+              "Title": "CustomerListPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\CustomerListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\CustomerListPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\CustomerListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\CustomerListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:30:40.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyHotelContext.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\MyHotelContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\MyHotelContext.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\MyHotelContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\MyHotelContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA5wCAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\LoginWindow.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\LoginWindow.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:48:18.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomInformationDialog.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:34:15.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomInformationDialog.xaml.cs",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationDialog.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationDialog.xaml.cs",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationDialog.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationDialog.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T08:33:51.349Z",
+              "WhenOpened": "2025-06-29T10:56:31.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RoomInformationListPage.xaml.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
-              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
-              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwGoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:51:11.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingReservationHistoryPage.xaml",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
-              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
-              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "Title": "RoomInformationForUserListPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationForUserListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationForUserListPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationForUserListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationForUserListPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-14T14:37:58.888Z"
+              "WhenOpened": "2025-06-29T02:33:50.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "RoomInformationListPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:30:36.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerDialog.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\CustomerDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\CustomerDialog.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\CustomerDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\CustomerDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:48:16.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingDialog.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingDialog.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingDialog.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingDialog.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:34:16.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingReservationReportPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationReportPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:48:13.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BookingReservationListPage.xaml",
               "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationListPage.xaml",
               "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationListPage.xaml",
               "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationListPage.xaml",
               "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationListPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-14T14:37:21.627Z"
+              "WhenOpened": "2025-06-29T10:48:01.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookingReservationHistoryPage.xaml.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
-              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
-              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAgwDgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:37:08.449Z"
+              "DocumentIndex": 11,
+              "Title": "BookingReservationHistoryPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationHistoryPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:34:17.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomInformationDAO.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\RoomInformationDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\RoomInformationDAO.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\DataAccessLayer\\RoomInformationDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\RoomInformationDAO.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAA6wE4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:23:21.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingReservationListPage.xaml.cs",
-              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
-              "RelativeDocumentMoniker": "TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
-              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
-              "RelativeToolTip": "TranNgocKhietWPF\\BookingReservationListPage.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwEMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:19:07.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RoomInformationForUserListPage.xaml.cs",
               "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationForUserListPage.xaml.cs",
               "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationForUserListPage.xaml.cs",
               "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationForUserListPage.xaml.cs",
               "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationForUserListPage.xaml.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAqwIMAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:19:05.365Z"
+              "WhenOpened": "2025-06-29T10:44:24.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProfileEditPage.xaml",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "RelativeToolTip": "TranNgocKhietWPF\\UserProfileEditPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T10:30:33.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoomInformationListPage.xaml.cs",
+              "DocumentMoniker": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "RelativeDocumentMoniker": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "ToolTip": "D:\\6_github_repositories\\prn212-assigment-2\\hotel-management-to-demo-csharp-with-database-connection\\TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "RelativeToolTip": "TranNgocKhietWPF\\RoomInformationListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T10:39:15.51Z"
             }
           ]
         }

@@ -6,108 +6,69 @@
         xmlns:local="clr-namespace:TranNgocKhietWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="AdminWindow" 
-        Width="950"
-        Height="900">
+        Title="Admin Dashboard" 
+        Width="1050"
+        Height="900"
+        Background="#FFF9F9FB">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="frMain" 
-               VerticalAlignment="Stretch" 
-               Grid.Row="0"
-               Grid.RowSpan="15"
-               Grid.Column="0"
-               Grid.ColumnSpan="18"
-               NavigationUIVisibility="Hidden"/>
+        <Border Grid.Row="0"
+                CornerRadius="12"
+                Background="White"
+                Padding="10"
+                BorderBrush="#DDD"
+                BorderThickness="1"
+                Margin="0,0,0,20">
+            <Frame x:Name="frMain"
+                   VerticalAlignment="Stretch"
+                   HorizontalAlignment="Stretch"
+                   NavigationUIVisibility="Hidden"/>
+        </Border>
 
-        <Button Content="Customer List" 
-                Name="ToCustomerListPageButton" 
-                Click="ToCustomerListPageButton_Click" 
-                HorizontalAlignment="Left"
-                Height="30" 
-                Width="80"
-                Grid.Column="1"
-                Grid.Row="15"
-                Grid.ColumnSpan="2"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Customer List"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToCustomerListPageButton_Click"/>
 
-        <Button Content="Room Information List"
-                Name="ToRoomInformationListPageButton" 
-                Click="ToRoomInformationListPageButton_Click" 
-                HorizontalAlignment="Right"
-                Height="30" 
-                Width="130"
-                Grid.Column="2"
-                Grid.Row="15"
-                Grid.ColumnSpan="4"/>
+            <Button Content="Room Info List"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToRoomInformationListPageButton_Click"/>
 
-        <Button Content="Booking Reservation List"
-                Name="ToBookingReservationListPageButton" 
-                Click="ToBookingReservationListPageButton_Click" 
-                HorizontalAlignment="Left"
-                Height="30" 
-                Width="140"
-                Grid.Column="7"
-                Grid.Row="15"
-                Grid.ColumnSpan="4"/>
+            <Button Content="Booking List"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToBookingReservationListPageButton_Click"/>
 
-        <Button Content="Booking Reservation Report"
-                Name="ToBookingReservationReportPageButton" 
-                Click="ToBookingReservationReportPageButton_Click" 
-                HorizontalAlignment="Right"
-                Height="30" 
-                Width="160"
-                Grid.Column="10"
-                Grid.Row="15"
-                Grid.ColumnSpan="4"/>
+            <Button Content="Report"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToBookingReservationReportPageButton_Click"/>
 
-        <Button Content="Log Out"
-                HorizontalAlignment="Right"
-                Height="30" 
-                Width="100"
-                Grid.Column="15"
-                Grid.Row="15"
-                Grid.ColumnSpan="2"
-                Click="LogoutButton_Click"/>
+            <Button Content="Log Out"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#F44336" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="LogoutButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

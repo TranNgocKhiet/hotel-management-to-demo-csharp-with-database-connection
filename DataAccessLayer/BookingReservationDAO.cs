@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using System.Diagnostics;
 
 namespace DataAccessLayer
 {
@@ -36,7 +37,8 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-                throw new Exception(e.Message);
+                Debug.WriteLine("💥 Error: " + e.ToString());
+                throw;
             }
         }
 

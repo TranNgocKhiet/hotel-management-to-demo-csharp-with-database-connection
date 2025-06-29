@@ -3,6 +3,7 @@ using Repositories;
 using Services;
 using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace TranNgocKhietWPF
 {
@@ -18,8 +19,6 @@ namespace TranNgocKhietWPF
 
             var customerRepo = new CustomerRepository();
             iCustomerService = new CustomerService(customerRepo);
-
-            LoadCustomers();
         }
 
         public BookingReservationDialog(BookingReservation booking) : this()
@@ -29,16 +28,10 @@ namespace TranNgocKhietWPF
 
 
             txtTotalPrice.Text = booking.TotalPrice.ToString();
-            txtStatus.Text = booking.BookingStatus.ToString();
-            cboCustomer.SelectedValue = booking.CustomerID;
+            cbStatus.SelectedIndex = (int) booking.BookingStatus;
+            txtCustomerID.Text = booking.CustomerID.ToString();
 
             BookingReservation = booking;
-        }
-
-        private void LoadCustomers()
-        {
-            var customers = iCustomerService.GetCustomers();
-            cboCustomer.ItemsSource = customers;
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
@@ -47,8 +40,15 @@ namespace TranNgocKhietWPF
             {
                 var bookingDate = DateOnly.Parse(txtBookingDate.Text);
                 var totalPrice = decimal.Parse(txtTotalPrice.Text);
-                var status = Byte.Parse(txtStatus.Text);
-                var customerId = (int)cboCustomer.SelectedValue;
+                var customerId = Int32.Parse(txtCustomerID.Text);
+
+                if (cbStatus.SelectedItem is not ComboBoxItem selectedItem)
+                {
+                    MessageBox.Show("Please select a booking status.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var status = Byte.Parse(selectedItem.Tag.ToString());
 
                 if (BookingReservation == null)
                 {
@@ -68,6 +68,7 @@ namespace TranNgocKhietWPF
                 MessageBox.Show("Invalid input: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {

@@ -13,9 +13,22 @@ namespace TranNgocKhietWPF
         private readonly IRoomInformationService iRoomInformationService;
         private readonly IBookingDetailService iBookingDetailService;
         private readonly IBookingReservationService iBookingReservationService;
-            
+        private readonly IRoomTypeService iRoomTypeService;
+
         private ObservableCollection<BookingDetail> pendingBookings = new ObservableCollection<BookingDetail>();
         private Customer currentCustomer;
+
+        public class RoomDisplayDto
+        {
+            public int RoomID { get; set; }
+            public string? RoomNumber { get; set; }
+            public string? RoomDetailDescription { get; set; }
+            public int? RoomMaxCapacity { get; set; }
+            public int? RoomStatus { get; set; }
+            public decimal? RoomPricePerDay { get; set; }
+
+            public string? RoomTypeName { get; set; }
+        }
 
         public RoomInformationForUserListPage(Customer customer)
         {
@@ -31,6 +44,9 @@ namespace TranNgocKhietWPF
 
             var reservationRepository = new BookingReservationRepository();
             iBookingReservationService = new BookingReservationService(reservationRepository);
+
+            var roomTypeRepository = new RoomTypeRepository();
+            iRoomTypeService = new RoomTypeService(roomTypeRepository);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -40,18 +56,39 @@ namespace TranNgocKhietWPF
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            string keyword = SearchTextBox.Text.Trim().ToLower();
+            string keyword = SearchTextBox.Text.Trim().ToLowerInvariant();
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                LoadRoomList();
+                if (BookingDataGrid.ItemsSource == null)
+                    BookingDataGrid.ItemsSource = pendingBookings;
+                return;
+            }
 
             try
             {
-                var allRooms = iRoomInformationService.GetRoomInformations();
+                var rooms = iRoomInformationService.GetRoomInformations();
+                var roomTypes = iRoomTypeService.GetRoomTypes();
 
-                var filteredRooms = allRooms
-                    .Where(r => r.RoomNumber.ToLower().Contains(keyword))
+                var displayList = rooms
+                    .Select(r => new RoomDisplayDto
+                    {
+                        RoomID = r.RoomID,
+                        RoomNumber = r.RoomNumber,
+                        RoomDetailDescription = r.RoomDetailDescription,
+                        RoomMaxCapacity = r.RoomMaxCapacity,
+                        RoomStatus = r.RoomStatus,
+                        RoomPricePerDay = r.RoomPricePerDay,
+                        RoomTypeName = roomTypes.FirstOrDefault(rt => rt.RoomTypeID == r.RoomTypeID)?.RoomTypeName ?? "Unknown"
+                    })
+                    .Where(dto =>
+                           (dto.RoomNumber?.ToLowerInvariant().Contains(keyword) ?? false) ||
+                           (dto.RoomTypeName?.ToLowerInvariant().Contains(keyword) ?? false) ||
+                           (dto.RoomDetailDescription?.ToLowerInvariant().Contains(keyword) ?? false))
                     .ToList();
 
-                RoomDataGrid.ItemsSource = null;
-                RoomDataGrid.ItemsSource = filteredRooms;
+                RoomDataGrid.ItemsSource = displayList;
             }
             catch (Exception ex)
             {
@@ -59,14 +96,26 @@ namespace TranNgocKhietWPF
             }
         }
 
+
         private void LoadRoomList()
         {
             try
             {
-                RoomDataGrid.Items.Clear();
                 var rooms = iRoomInformationService.GetRoomInformations();
-                RoomDataGrid.ItemsSource = null;
-                RoomDataGrid.ItemsSource = rooms;
+                var roomTypes = iRoomTypeService.GetRoomTypes(); 
+
+                var displayList = rooms.Select(r => new RoomDisplayDto
+                {
+                    RoomID = r.RoomID,
+                    RoomNumber = r.RoomNumber,
+                    RoomDetailDescription = r.RoomDetailDescription,
+                    RoomMaxCapacity = r.RoomMaxCapacity,
+                    RoomStatus = r.RoomStatus,
+                    RoomPricePerDay = r.RoomPricePerDay,
+                    RoomTypeName = roomTypes.FirstOrDefault(rt => rt.RoomTypeID == r.RoomTypeID)?.RoomTypeName ?? "Unknown"
+                }).ToList();
+
+                RoomDataGrid.ItemsSource = displayList;
             }
             catch (Exception ex)
             {
@@ -82,9 +131,18 @@ namespace TranNgocKhietWPF
 
         private void BookRoomButton_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is RoomInformation room)
+            if (sender is Button button && button.Tag is RoomDisplayDto roomDto)
             {
-                var dialog = new BookingDialog(room); 
+                var room = iRoomInformationService.GetRoomInformations()
+                            .FirstOrDefault(r => r.RoomID == roomDto.RoomID);
+
+                if (room == null)
+                {
+                    MessageBox.Show("Room not found.");
+                    return;
+                }
+
+                var dialog = new BookingDialog(room);
                 if (dialog.ShowDialog() == true)
                 {
                     var booking = new BookingDetail
@@ -92,14 +150,15 @@ namespace TranNgocKhietWPF
                         RoomID = room.RoomID,
                         StartDate = dialog.StartDate,
                         EndDate = dialog.EndDate,
-                        ActualPrice = room.RoomPricePerDay, 
+                        ActualPrice = room.RoomPricePerDay,
                     };
 
                     pendingBookings.Add(booking);
+                    LoadPendingBookingRoomList();
                 }
             }
-            LoadPendingBookingRoomList();
         }
+
 
         private void ConfirmBookingsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -114,7 +173,7 @@ namespace TranNgocKhietWPF
 
             var totalPrice = pendingBookings.Sum(b =>
                 b.ActualPrice *
-                (b.EndDate.ToDateTime(TimeOnly.MinValue) - b.StartDate.ToDateTime(TimeOnly.MinValue)).Days
+                ((b.EndDate.ToDateTime(TimeOnly.MinValue) - b.StartDate.ToDateTime(TimeOnly.MinValue)).Days + 1)
             );
 
             int ID = 1;
@@ -133,7 +192,7 @@ namespace TranNgocKhietWPF
                 BookingDate = dateOnly,
                 TotalPrice = totalPrice,
                 CustomerID = currentCustomer.CustomerID,
-                BookingStatus = 1
+                BookingStatus = 0
             };
 
             iBookingReservationService.AddBookingReservation(bookingReservation);

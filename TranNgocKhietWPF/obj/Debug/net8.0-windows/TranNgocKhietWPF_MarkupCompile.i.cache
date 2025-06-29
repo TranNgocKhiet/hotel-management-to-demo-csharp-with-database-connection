@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\6_github_repositories\prn212-assigment-2\hotel-management-to-demo-csharp-with-database-connection\TranNgocKhietWPF\App.xaml
-15-651470599
+14-281955572
 
-19-3802620
+18-833708412
 238-1551590816
-AdminWindow.xaml;BookingDetailDialog.xaml;BookingDialog.xaml;BookingReservationDialog.xaml;BookingReservationHistoryPage.xaml;BookingReservationListPage.xaml;BookingReservationReportPage.xaml;CustomerDialog.xaml;CustomerListPage.xaml;LoginWindow.xaml;RoomInformationDialog.xaml;RoomInformationForUserListPage.xaml;RoomInformationListPage.xaml;UserProfileEditPage.xaml;UserWindow.xaml;
+AdminWindow.xaml;BookingDialog.xaml;BookingReservationDialog.xaml;BookingReservationHistoryPage.xaml;BookingReservationListPage.xaml;BookingReservationReportPage.xaml;CustomerDialog.xaml;CustomerListPage.xaml;LoginWindow.xaml;RoomInformationDialog.xaml;RoomInformationForUserListPage.xaml;RoomInformationListPage.xaml;UserProfileEditPage.xaml;UserWindow.xaml;
 
 True
 

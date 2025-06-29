@@ -9,6 +9,18 @@ namespace TranNgocKhietWPF
     public partial class RoomInformationListPage : Page
     {
         private readonly IRoomInformationService iRoomInformationService;
+        private readonly IRoomTypeService iRoomTypeService;
+        public class RoomDisplayDto
+        {
+            public int RoomID { get; set; }
+            public string? RoomNumber { get; set; }
+            public string? RoomDetailDescription { get; set; }
+            public int? RoomMaxCapacity { get; set; }
+            public int? RoomStatus { get; set; }
+            public decimal? RoomPricePerDay { get; set; }
+
+            public string? RoomTypeName { get; set; }
+        }
 
         public RoomInformationListPage()
         {
@@ -16,6 +28,9 @@ namespace TranNgocKhietWPF
 
             var roomRepository = new RoomInformationRepository();
             iRoomInformationService = new RoomInformationService(roomRepository);
+
+            var roomTypeRepository = new RoomTypeRepository();
+            iRoomTypeService = new RoomTypeService(roomTypeRepository);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -29,14 +44,31 @@ namespace TranNgocKhietWPF
 
             try
             {
-                var allRooms = iRoomInformationService.GetRoomInformations();
+                var rooms = iRoomInformationService.GetRoomInformations();
+                var roomTypes = iRoomTypeService.GetRoomTypes();
 
-                var filteredRooms = allRooms
-                    .Where(r => r.RoomNumber.ToLower().Contains(keyword))
-                    .ToList();
+                var displayList = rooms.Select(r => new RoomDisplayDto
+                {
+                    RoomID = r.RoomID,
+                    RoomNumber = r.RoomNumber,
+                    RoomDetailDescription = r.RoomDetailDescription,
+                    RoomMaxCapacity = r.RoomMaxCapacity,
+                    RoomStatus = r.RoomStatus,
+                    RoomPricePerDay = r.RoomPricePerDay,
+                    RoomTypeName = roomTypes.FirstOrDefault(rt => rt.RoomTypeID == r.RoomTypeID)?.RoomTypeName ?? "Unknown"
+                }).ToList();
+
+                if (!string.IsNullOrEmpty(keyword))
+                {
+                    displayList = displayList.Where(r =>
+                        (!string.IsNullOrEmpty(r.RoomNumber) && r.RoomNumber.ToLower().Contains(keyword)) ||
+                        (!string.IsNullOrEmpty(r.RoomDetailDescription) && r.RoomDetailDescription.ToLower().Contains(keyword)) ||
+                        (!string.IsNullOrEmpty(r.RoomTypeName) && r.RoomTypeName.ToLower().Contains(keyword))
+                    ).ToList();
+                }
 
                 RoomDataGrid.ItemsSource = null;
-                RoomDataGrid.ItemsSource = filteredRooms;
+                RoomDataGrid.ItemsSource = displayList;
             }
             catch (Exception ex)
             {
@@ -44,13 +76,26 @@ namespace TranNgocKhietWPF
             }
         }
 
+
         public void LoadRoomList()
         {
             try
             {
                 var rooms = iRoomInformationService.GetRoomInformations();
-                RoomDataGrid.ItemsSource = null;
-                RoomDataGrid.ItemsSource = rooms;
+                var roomTypes = iRoomTypeService.GetRoomTypes();
+
+                var displayList = rooms.Select(r => new RoomDisplayDto
+                {
+                    RoomID = r.RoomID,
+                    RoomNumber = r.RoomNumber,
+                    RoomDetailDescription = r.RoomDetailDescription,
+                    RoomMaxCapacity = r.RoomMaxCapacity,
+                    RoomStatus = r.RoomStatus,
+                    RoomPricePerDay = r.RoomPricePerDay,
+                    RoomTypeName = roomTypes.FirstOrDefault(rt => rt.RoomTypeID == r.RoomTypeID)?.RoomTypeName ?? "Unknown"
+                }).ToList();
+
+                RoomDataGrid.ItemsSource = displayList;
             }
             catch (Exception ex)
             {
@@ -76,11 +121,17 @@ namespace TranNgocKhietWPF
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            if (RoomDataGrid.SelectedItem is RoomInformation selectedRoom)
+            if (RoomDataGrid.SelectedItem is RoomDisplayDto selectedDto)
             {
-                List<RoomType> roomTypes = RoomTypeRepository.Instance.GetRoomTypes();
+                var originalRoom = iRoomInformationService.GetRoomInformation(selectedDto.RoomID);
+                if (originalRoom == null)
+                {
+                    MessageBox.Show("Room not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
 
-                var dialog = new RoomInformationDialog(roomTypes, selectedRoom);
+                List<RoomType> roomTypes = RoomTypeRepository.Instance.GetRoomTypes();
+                var dialog = new RoomInformationDialog(roomTypes, originalRoom);
                 if (dialog.ShowDialog() == true)
                 {
                     iRoomInformationService.UpdateRoomInformation(dialog.RoomInfo);
@@ -93,12 +144,20 @@ namespace TranNgocKhietWPF
             }
         }
 
+
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            if (RoomDataGrid.SelectedItem is RoomInformation selectedRoom)
+            if (RoomDataGrid.SelectedItem is RoomDisplayDto selectedDto)
             {
+                var room = iRoomInformationService.GetRoomInformation(selectedDto.RoomID);
+                if (room == null)
+                {
+                    MessageBox.Show("Room not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
                 MessageBoxResult result = MessageBox.Show(
-                    $"Are you sure you want to delete room '{selectedRoom.RoomNumber}'?",
+                    $"Are you sure you want to delete room '{room.RoomNumber}'?",
                     "Confirm Delete",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question);
@@ -107,19 +166,19 @@ namespace TranNgocKhietWPF
                 {
                     try
                     {
-                        if (iRoomInformationService.IsRoomInTransaction(selectedRoom.RoomID))
+                        if (iRoomInformationService.IsRoomInTransaction(room.RoomID))
                         {
-                            selectedRoom.RoomStatus = 0; 
-                            iRoomInformationService.UpdateRoomInformation(selectedRoom);
-                            MessageBox.Show("Room is in use. Status changed to Inactive.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                            room.RoomStatus = 2;
+                            iRoomInformationService.UpdateRoomInformation(room);
+                            MessageBox.Show("Room is in use. Status changed to Deleted.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                         else
                         {
-                            iRoomInformationService.RemoveRoomInformation(selectedRoom);
+                            iRoomInformationService.RemoveRoomInformation(room);
                             MessageBox.Show("Room deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
 
-                        LoadRoomList(); 
+                        LoadRoomList();
                     }
                     catch (Exception ex)
                     {
@@ -132,5 +191,6 @@ namespace TranNgocKhietWPF
                 MessageBox.Show("Please select a room to delete.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
     }
 }

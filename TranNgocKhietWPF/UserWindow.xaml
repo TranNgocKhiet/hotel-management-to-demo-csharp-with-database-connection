@@ -6,98 +6,58 @@
         xmlns:local="clr-namespace:TranNgocKhietWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="UserWindow" 
-        Width="950"
-        Height="900">
+        Title="User Dashboard" 
+        Width="1050"
+        Height="900"
+        Background="#FFF9F9FB">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="frMain" 
-               VerticalAlignment="Stretch" 
-               Grid.Row="0"
-               Grid.RowSpan="13"
-               Grid.Column="0"
-               Grid.ColumnSpan="18"
-               NavigationUIVisibility="Hidden"/>
+        <Border Grid.Row="0" CornerRadius="12" Background="White" Padding="10" BorderBrush="#DDD" BorderThickness="1" Margin="0,0,0,20">
+            <Frame x:Name="frMain"
+                   VerticalAlignment="Stretch"
+                   HorizontalAlignment="Stretch"
+                   NavigationUIVisibility="Hidden"/>
+        </Border>
 
-        <Button Content="Room List"
-                Height="30"
-                Width="150"
-                Grid.Column="1"
-                Grid.ColumnSpan="3"
-                Grid.Row="14"
-                HorizontalAlignment="Left"
-                Click="ViewRoomListButtonClick"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Room List"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ViewRoomListButtonClick"/>
 
-        <Button Content="Booking Reservation History" 
-                Name="ToBookingReservationHistoryPageButton" 
-                Click="ToBookingReservationHistoryPageButton_Click" 
-                HorizontalAlignment="Left"
-                Height="30" 
-                Width="150"
-                Grid.Column="8"
-                Grid.Row="14"
-                Grid.ColumnSpan="4"/>
+            <Button Content="Booking History"
+                    Name="ToBookingReservationHistoryPageButton"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToBookingReservationHistoryPageButton_Click"/>
 
+            <Button Content="Edit Profile"
+                    Name="ToEditProfiletPageButton"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#8C5DF6" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="ToEditProfiletPageButton_Click"/>
 
-        <Button Content="Edit Profile"
-                Name="ToEditProfiletPageButton" 
-                Click="ToEditProfiletPageButton_Click" 
-                HorizontalAlignment="Right"
-                Height="30" 
-                Width="150"
-                Grid.Column="13"
-                Grid.Row="14"
-                Grid.ColumnSpan="4"/>
-        
-        <Button Content="Log Out"
-                HorizontalAlignment="Right"
-                Height="30" 
-                Width="150"
-                Grid.Column="13"
-                Grid.Row="15"
-                Grid.ColumnSpan="4"
-                Click="LogoutButton_Click"/>
+            <Button Content="Log Out"
+                    Width="180" Height="40"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Background="#F44336" Foreground="White"
+                    FontWeight="SemiBold"
+                    Click="LogoutButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

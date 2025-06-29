@@ -11,12 +11,24 @@ namespace TranNgocKhietWPF
     public partial class BookingReservationReportPage : Page
     {
         private readonly IBookingReservationService bookingService;
+        private readonly ICustomerService customerService;
+
+        public class BookingReservationReportViewModel
+        {
+            public int BookingReservationID { get; set; }
+            public DateOnly? BookingDate { get; set; }
+            public string? CustomerFullName { get; set; }
+            public decimal? TotalPrice { get; set; }
+        }
 
         public BookingReservationReportPage()
         {
             InitializeComponent();
-            var repo = new BookingReservationRepository();
-            bookingService = new BookingReservationService(repo);
+            BookingReservationRepository bookingReservationRepository = new BookingReservationRepository();
+            bookingService = new BookingReservationService(bookingReservationRepository);
+
+            CustomerRepository customerRepository = new CustomerRepository();
+            customerService = new CustomerService(customerRepository);
         }
 
         private void GenerateReport_Click(object sender, RoutedEventArgs e)
@@ -36,14 +48,28 @@ namespace TranNgocKhietWPF
                 return;
             }
 
+            List<BookingReservation> reservations = bookingService.GetBookingReservations();
+            List<Customer> customers = customerService.GetCustomers();
+
+           
             try
             {
-                var bookings = bookingService.GetBookingReservations()
-                    .Where(b => b.BookingDate >= start && b.BookingDate <= end)
-                    .OrderByDescending(b => b.BookingDate)
-                    .ToList();
+                var filtered = reservations
+                   .Where(r => r.BookingDate >= start && r.BookingDate <= end)
+                   .Join(customers,
+                   r => r.CustomerID,
+                   c => c.CustomerID,
+                   (r, c) => new BookingReservationReportViewModel
+                   {
+                       BookingReservationID = r.BookingReservationID,
+                       BookingDate = r.BookingDate,
+                       CustomerFullName = c.CustomerFullName,
+                       TotalPrice = r.TotalPrice
+                   })
+                   .OrderByDescending(r => r.BookingDate)
+                   .ToList();
 
-                ReportDataGrid.ItemsSource = bookings;
+                ReportDataGrid.ItemsSource = filtered;
             }
             catch (Exception ex)
             {

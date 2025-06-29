@@ -11,6 +11,8 @@ namespace TranNgocKhietWPF
         public AdminWindow()
         {
             InitializeComponent();
+
+            frMain.Navigate(new RoomInformationListPage());
         }
 
         private void ToCustomerListPageButton_Click(Object sender, RoutedEventArgs e)

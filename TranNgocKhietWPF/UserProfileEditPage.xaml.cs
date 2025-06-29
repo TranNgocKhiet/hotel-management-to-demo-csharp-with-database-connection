@@ -25,7 +25,7 @@ namespace TranNgocKhietWPF
             txtTelephone.Text = currentUser.Telephone;
             txtEmailAddress.Text = currentUser.EmailAddress;
 
-            txtCustomerBirthday.Text = currentUser.CustomerBirthday.HasValue
+            dpCustomerBirthday.Text = currentUser.CustomerBirthday.HasValue
                 ? currentUser.CustomerBirthday.Value.ToString("dd/MM/yyyy") : "";
         }
 
@@ -34,7 +34,7 @@ namespace TranNgocKhietWPF
             currentUser.CustomerFullName = txtFullName.Text;
             currentUser.Telephone = txtTelephone.Text;
             currentUser.EmailAddress = txtEmailAddress.Text;
-            currentUser.CustomerBirthday = DateOnly.Parse(txtCustomerBirthday.Text);
+            currentUser.CustomerBirthday = DateOnly.Parse(dpCustomerBirthday.Text);
 
             iCustomerService.UpdateCustomer(currentUser);
 

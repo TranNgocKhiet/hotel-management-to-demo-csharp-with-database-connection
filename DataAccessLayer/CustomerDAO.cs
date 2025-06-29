@@ -31,7 +31,8 @@ namespace DataAccessLayer
             try
             {
                 using var db = new MyHotelContext();
-                Customer customer = db.Customers.FirstOrDefault(c => c.EmailAddress.Equals(email) && c.Password.Equals(password));
+                Customer customer = db.Customers.FirstOrDefault(c => c.EmailAddress.Equals(email) && c.Password.Equals(password)
+                    && c.CustomerStatus == 1);
                 if (customer != null)
                     return customer;
                 return null;

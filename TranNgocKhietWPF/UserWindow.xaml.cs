@@ -15,6 +15,8 @@ namespace TranNgocKhietWPF
             InitializeComponent();
 
             currentCustomer = customer;
+
+            frMain.Navigate(new RoomInformationForUserListPage(currentCustomer));
         }
 
         private void ToBookingReservationHistoryPageButton_Click(Object sender, RoutedEventArgs e)

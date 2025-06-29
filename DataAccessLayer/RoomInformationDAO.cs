@@ -59,25 +59,12 @@ namespace DataAccessLayer
             try
             {
                 using var db = new MyHotelContext();
-                List<BookingDetail> bookingDetails = db.BookingDetails.Where(b => b.RoomID == room.RoomID).ToList();
-                var rooms = db.RoomInformations.SingleOrDefault(r => r.RoomID == room.RoomID);
 
-                if (rooms != null)
+                if (room != null)
                 {
-                    foreach (var roomInUse in bookingDetails)
-                    {
-                        if (roomInUse.RoomID == room.RoomID)
-                        {
-                            room.RoomStatus = 0;
-                            db.RoomInformations.Update(room);
-                        }
-                        else
-                        {
-                            db.RoomInformations.Remove(rooms);
-                            db.SaveChanges();
-                        }
-                    } 
-                }
+                    db.RoomInformations.Remove(room);
+                    db.SaveChanges();
+                } 
             }
             catch (Exception e)
             {

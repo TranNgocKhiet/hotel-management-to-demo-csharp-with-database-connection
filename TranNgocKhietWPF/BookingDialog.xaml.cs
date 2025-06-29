@@ -9,10 +9,14 @@ namespace TranNgocKhietWPF
         public DateOnly StartDate { get; private set; }
         public DateOnly EndDate { get; private set; }
 
+
         public BookingDialog(RoomInformation room)
         {
             InitializeComponent();
             Title = $"Book Room {room.RoomNumber}";
+
+            StartDatePicker.DisplayDateStart = DateTime.Today;
+            EndDatePicker.DisplayDateStart = DateTime.Today;
         }
 
         private void OKButton_Click(object sender, RoutedEventArgs e)

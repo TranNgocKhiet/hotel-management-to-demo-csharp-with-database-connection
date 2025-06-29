@@ -1,29 +1,84 @@
 ﻿<Window x:Class="TranNgocKhietWPF.BookingReservationDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Booking Reservation" Height="350" Width="400" WindowStartupLocation="CenterScreen">
+        Title="Booking Reservation"
+        Height="380" Width="420"
+        WindowStartupLocation="CenterScreen"
+        Background="#F9F9F9"
+        FontFamily="Segoe UI">
+
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel>
-            <Label Content="Booking Date (yyyy-MM-dd)"/>
-            <TextBox x:Name="txtBookingDate"/>
+        <StackPanel VerticalAlignment="Top">
+            <TextBlock Text="Booking Date (yyyy-MM-dd)"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,2"/>
+            <TextBox x:Name="txtBookingDate"
+                     IsEnabled="False"
+                     Height="30"
+                     Background="#FFFFFF"
+                     BorderBrush="#CCC"
+                     Padding="5"/>
 
-            <Label Content="Total Price"/>
-            <TextBox x:Name="txtTotalPrice"/>
+            <TextBlock Text="Total Price"
+                       FontWeight="SemiBold"
+                       Margin="0,10,0,2"/>
+            <TextBox x:Name="txtTotalPrice"
+                     IsEnabled="False"
+                     Height="30"
+                     Background="#FFFFFF"
+                     BorderBrush="#CCC"
+                     Padding="5"/>
 
-            <Label Content="Customer"/>
-            <ComboBox x:Name="cboCustomer" DisplayMemberPath="CustomerFullName" SelectedValuePath="CustomerID"/>
+            <TextBlock Text="Customer ID"
+                       FontWeight="SemiBold"
+                       Margin="0,10,0,2"/>
+            <TextBox x:Name="txtCustomerID"
+                     IsEnabled="False"
+                     Height="30"
+                     Background="#FFFFFF"
+                     BorderBrush="#CCC"
+                     Padding="5"/>
 
-            <Label Content="Booking Status (0 = Pending, 1 = Confirmed, 2 = Cancelled)"/>
-            <TextBox x:Name="txtStatus"/>
+            <TextBlock Text="Booking Status"
+                       FontWeight="SemiBold"
+                       Margin="0,10,0,2"/>
+            <ComboBox x:Name="cbStatus"
+                      Height="30"
+                      Background="White"
+                      BorderBrush="#CCC"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Pending" Tag="0" />
+                <ComboBoxItem Content="Confirmed" Tag="1" />
+                <ComboBoxItem Content="Cancelled" Tag="2" />
+            </ComboBox>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button Content="OK" Width="75" Margin="5" Click="Ok_Click"/>
-                <Button Content="Cancel" Width="75" Margin="5" Click="Cancel_Click"/>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,20,0,0">
+                <Button Content="OK"
+                        Width="80"
+                        Height="30"
+                        Background="#8C5DF6"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        BorderBrush="White"
+                        Click="Ok_Click"
+                        Cursor="Hand"/>
+
+                <Button Content="Cancel"
+                        Width="80"
+                        Height="30"
+                        Background="#E0E0E0"
+                        Foreground="Black"
+                        FontWeight="SemiBold"
+                        BorderBrush="White"
+                        Click="Cancel_Click"
+                        Cursor="Hand"/>
             </StackPanel>
         </StackPanel>
     </Grid>

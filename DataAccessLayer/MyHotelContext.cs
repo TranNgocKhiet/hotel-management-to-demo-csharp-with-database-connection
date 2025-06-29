@@ -44,6 +44,12 @@ namespace DataAccessLayer
             modelBuilder.Entity<RoomInformation>()
             .HasKey(r => r.RoomID);
 
+            modelBuilder.Entity<RoomType>()
+                .HasKey(t => t.RoomTypeID);
+
+            modelBuilder.Entity<BookingReservation>()
+                .HasKey(r => r.BookingReservationID);
+
             modelBuilder.Entity<BookingDetail>()
             .HasKey(b => new { b.BookingReservationID, b.RoomID, b.StartDate, b.EndDate, b.ActualPrice });
 
